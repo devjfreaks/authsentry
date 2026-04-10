@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  authsentry:
+    build: .
+    image: authsentry:latest
+    volumes:
+      - ./logs:/data/logs:ro          # mount your log directory
+      - ./output:/data/output          # reports land here
+      - ./cache.db:/data/cache.db      # persistent cache
+    environment:
+      - IPGEOLOCATION_API_KEY=${IPGEOLOCATION_API_KEY:-}
+    # Example usage:
+    # docker compose run authsentry /data/logs/auth.log --output html --out /data/output/report.html --enrich-all
+    entrypoint: ["authsentry"]

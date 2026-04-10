@@ -1,0 +1,8 @@
+authsentry
+authsentry.exe
+*.db
+*.html
+dist/
+.env
+*.log
+!testdata/*.log

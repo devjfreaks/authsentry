@@ -1,0 +1,15 @@
+2024-01-15 10:23:45,123 WARNING django.security Failed login for user 'admin' from 104.21.45.67
+2024-01-15 10:23:46,456 WARNING django.security Failed login for user 'admin' from 104.21.45.67
+2024-01-15 10:23:47,789 WARNING django.security Failed login for user 'root' from 185.220.101.47
+2024-01-15 10:24:01,111 INFO authentication.login Successful login for user 'alice' from 203.0.113.42
+2024-01-15 10:24:15,222 WARNING django.security Failed login for user 'administrator' from 45.155.205.233
+2024-01-15 10:24:16,333 WARNING django.security Failed login for user 'test' from 45.155.205.233
+2024-01-15 10:24:17,444 WARNING django.security Failed login for user 'user' from 45.155.205.233
+2024-01-15 10:25:00,555 INFO authentication.login Successful login for user 'bob' from 192.168.1.50
+2024-01-15 10:25:30,666 WARNING django.security Failed login for user 'admin' from 162.158.88.15
+2024-01-15 10:26:00,777 INFO authentication.login Successful login for user 'charlie' from 8.8.8.8
+2024-01-15 10:26:01,888 WARNING django.security Failed login for user 'wp-admin' from 194.165.16.11
+2024-01-15 10:26:02,999 WARNING django.security Failed login for user 'webmaster' from 194.165.16.11
+2024-01-15 10:26:45,000 WARNING django.security Invalid password for user 'alice' from 31.13.64.35
+2024-01-15 10:27:00,001 INFO authentication.login Successful login for user 'diana' from 74.125.224.100
+2024-01-15 10:27:30,002 WARNING django.security Failed login for user 'mysql' from 89.248.167.131
