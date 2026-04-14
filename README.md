@@ -1,6 +1,6 @@
 # AuthSentry
 
-**Suspicious login detector for auth logs.** AuthSentry parses authentication log files, enriches IPs with geolocation and security intelligence via [ipgeolocation.io](https://ipgeolocation.io), and produces risk-scored HTML or JSON reports.
+**Suspicious login detector for auth logs.** AuthSentry parses authentication log files, enriches IPs with [geolocation](https://ipgeolocation.io/documentation/ip-location-api.html) and [security intelligence](https://ipgeolocation.io/documentation/ip-security-api.html) via [ipgeolocation.io](https://ipgeolocation.io), and produces risk-scored HTML or JSON reports.
 
 A login from a DigitalOcean IP with a VPN flag is almost certainly a credential stuffing attack.  
 A login from the same country as all previous sessions is probably fine.  
@@ -66,7 +66,8 @@ docker run --rm \
 
 ## Getting an API Key
 
-1. Go to [https://ipgeolocation.io](https://ipgeolocation.io) and sign up for a free account
+1. Go to [https://ipgeolocation.io](https://ipgeolocation.io) and sign up for a free account  
+   → API docs: [IP Location](https://ipgeolocation.io/documentation/ip-location-api.html) · [IP Security](https://ipgeolocation.io/documentation/ip-security-api.html)
 2. Copy your API key from the dashboard
 3. Set it: `export IPGEOLOCATION_API_KEY=your_key` or pass `--api-key your_key`
 
@@ -149,7 +150,7 @@ Any line containing login-related keywords with an extractable IP address.
 
 ## Risk Scoring
 
-AuthSentry combines multiple signals to produce a verdict:
+AuthSentry combines multiple signals to produce a verdict, powered by the [IP Location API](https://ipgeolocation.io/documentation/ip-location-api.html) and [IP Security API](https://ipgeolocation.io/documentation/ip-security-api.html):
 
 | Signal | Points |
 |---|---|
